@@ -1,10 +1,30 @@
 # Tinker-Controller
 An open-source Game Controller App that allows you to use an Xbox/Ps4/Joycon or any controller that works with your phone to effortlessly control most micro-controllers such as Arduino/Esp8266/Raspberry Pi over WiFi, bluetooth, or USB.
+
+<p align="center"> 
+<img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/ic_launcher_round.png">
+  <h1 align="center">Tinker Controller</h1>
+</p>
+
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R6GFJS92FX7J2)
 
 ## Video
 My Teaser Video from [Reddit](https://www.reddit.com/r/arduino/comments/aap154/i_connected_my_xbox_controller_to_my_esp8266_with/) and [Youtube](https://www.youtube.com/watch?v=hzFY1dZjo34)
 
+## Getting Started
+  1. Download Android Studio 3.2.0 or higher and then use it to build the project files into an .apk file
+     + Or you can download the demo.apk file here
+  2. Next upload the Arduino.ino file to the esp8266
+  3. Launch app, and click on "Gamepad".  
+  4. You should notice the app will automatically connect to the esp8266, but if it doesn't you can tap on the button that has the WiFi symbol
+  5. When connected successfully, the WiFi button and toggle button should turn blue.
+  6. Now, grab a game controller supported by Android.
+     + If you don't have a controller, then you can tap on the toggle button(button underneath WiFi button) to toggle esp8266's built-in LED
+  7. You should notice that the game controller on the screen is showing the live actions you are doing on your controller
+     + If nothing happens, try to close app, and try again.  If it still fails, then your controller is not supported by Android(which is rare)
+  8. Press the A button(down button) on your controller, and you should notice that you are controlling the Esp8266's Built-in Led. 
+  9. To disconnect, you can leave the gamepad mode or press the WiFi button.
+  10. Have fun, and donate if you want this project to continue :)
 
 ## Thank you
   + Guys at Espressif for the amazing and fast library and plugin for esp8266
