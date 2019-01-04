@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion buildConfig.compileSdk
+
+    defaultConfig {
+        applicationId "com.example.nathan.tinkercontroller"
+        minSdkVersion buildConfig.minSdk
+        targetSdkVersion buildConfig.targetSdk
+        versionCode 1
+        versionName "1.0"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+
+dependencies {
+    //Cyanea Theme Engine
+//        implementation 'com.jaredrummler:cyanea:1.0.1'
+    implementation project(':libraries:Cyanea')
+    //I imported the library module so that I could change the default theme
+    //Butterknife
+    implementation deps.butterknife.library
+    implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+    annotationProcessor deps.butterknife.annotation
+    //Glide for circular images
+    implementation deps.glide.library
+    annotationProcessor deps.glide.annotation
+    //AndroidX libraries
+    implementation deps.material
+    implementation deps.androidx.constraintLayout
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}

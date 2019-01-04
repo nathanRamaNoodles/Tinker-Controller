@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/wifi_connect_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_signal_wifi_off_black_24dp"
+        android:tint="@color/cyanea_primary_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Toggle_background"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_joystick"
+        android:tint="@color/cyanea_primary_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/toggle_led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_album_black_24dp"
+        android:tint="@color/cyanea_accent"
+        app:layout_constraintBottom_toBottomOf="@+id/Toggle_background"
+        app:layout_constraintEnd_toEndOf="@+id/Toggle_background"
+        app:layout_constraintStart_toStartOf="@+id/Toggle_background"
+        app:layout_constraintTop_toTopOf="@+id/Toggle_background" />
+
+    <!--D-Pad Center-->
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="19dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_dpad_down"
+        android:tint="@color/cyanea_primary_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.571" />
+    <!--Controller Frame-->
+    <ImageView
+        android:id="@+id/controller_frame"
+        android:layout_width="347dp"
+        android:layout_height="235dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller"
+        android:tint="@color/cyanea_accent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/button_up"
+        android:layout_width="17.9dp"
+        android:layout_height="17.9dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_round_buttons"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.760"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.208" />
+    <!--Button Down-->
+    <ImageView
+        android:id="@+id/button_down"
+        android:layout_width="17.9dp"
+        android:layout_height="17.9dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_round_buttons"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.760"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.420" />
+    <!--Button Right-->
+    <ImageView
+        android:id="@+id/button_right"
+        android:layout_width="17.9dp"
+        android:layout_height="17.9dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_round_buttons"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.314" />
+    <!--Button Left-->
+    <ImageView
+        android:id="@+id/button_left"
+        android:layout_width="17.9dp"
+        android:layout_height="17.9dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_round_buttons"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.314" />
+
+
+    <!--back Button-->
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="9.5dp"
+        android:layout_height="9.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_round_buttons"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.32" />
+    <!--Menu Button-->
+    <ImageView
+        android:id="@+id/button_menu"
+        android:layout_width="9.5dp"
+        android:layout_height="9.5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_round_buttons"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.32" />
+
+
+    <!--D-Pad Up-->
+    <ImageView
+        android:id="@+id/dPad_up"
+        android:layout_width="15dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_dpad_up"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.492" />
+    <!--D-Pad down-->
+    <ImageView
+        android:id="@+id/dPad_down"
+        android:layout_width="15dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_dpad_down"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.641" />
+    <!--D-Pad Right-->
+    <ImageView
+        android:id="@+id/dPad_right"
+        android:layout_width="16dp"
+        android:layout_height="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_dpad_right"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.566" />
+    <!--D-Pad Left-->
+    <ImageView
+        android:id="@+id/dPad_left"
+        android:layout_width="16dp"
+        android:layout_height="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_dpad_left"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.566" />
+
+
+    <!--Trigger Left-->
+    <ImageView
+        android:id="@+id/trigger_left"
+        android:layout_width="66.4dp"
+        android:layout_height="18.4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_left_trigger"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.051" />
+    <!--Trigger Right-->
+    <ImageView
+        android:id="@+id/trigger_right"
+        android:layout_width="70.3dp"
+        android:layout_height="22.7dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_right_trigger"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <!--Analog Trigger Left-->
+    <ImageView
+        android:id="@+id/analog_trigger_left"
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_left_analog_trigger"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.022" />
+    <!--Analog Trigger Right-->
+    <ImageView
+        android:id="@+id/analog_trigger_right"
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_right_analog_trigger"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <!--Left Joystick-->
+    <ImageView
+        android:id="@+id/left_outer_edge_joystick"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_joystick"
+        android:tint="@color/cyanea_primary_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <ImageView
+        android:id="@+id/left_outline_joystick"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_joystick"
+        android:tint="@color/cyanea_accent"
+        app:layout_constraintBottom_toBottomOf="@+id/left_outer_edge_joystick"
+        app:layout_constraintEnd_toEndOf="@+id/left_outer_edge_joystick"
+        app:layout_constraintStart_toStartOf="@+id/left_outer_edge_joystick"
+        app:layout_constraintTop_toTopOf="@+id/left_outer_edge_joystick" />
+
+    <ImageView
+        android:id="@+id/left_inner_edge_joystick"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_joystick"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/left_outer_edge_joystick"
+        app:layout_constraintEnd_toEndOf="@+id/left_outer_edge_joystick"
+        app:layout_constraintStart_toStartOf="@+id/left_outer_edge_joystick"
+        app:layout_constraintTop_toTopOf="@+id/left_outer_edge_joystick" />
+
+    <!--Right Joystick-->
+    <ImageView
+        android:id="@+id/right_outer_edge_joystick"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_joystick"
+        android:tint="@color/cyanea_primary_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/controller_frame"
+        app:layout_constraintEnd_toEndOf="@+id/controller_frame"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="@+id/controller_frame"
+        app:layout_constraintTop_toTopOf="@+id/controller_frame"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <ImageView
+        android:id="@+id/right_outline_joystick"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_joystick"
+        android:tint="@color/cyanea_accent"
+        app:layout_constraintBottom_toBottomOf="@+id/right_outer_edge_joystick"
+        app:layout_constraintEnd_toEndOf="@+id/right_outer_edge_joystick"
+        app:layout_constraintStart_toStartOf="@+id/right_outer_edge_joystick"
+        app:layout_constraintTop_toTopOf="@+id/right_outer_edge_joystick" />
+
+    <ImageView
+        android:id="@+id/right_inner_edge_joystick"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_xbox_controller_joystick"
+        android:tint="@color/cyanea_primary_dark"
+
+        app:layout_constraintBottom_toBottomOf="@+id/right_outer_edge_joystick"
+        app:layout_constraintEnd_toEndOf="@+id/right_outer_edge_joystick"
+        app:layout_constraintStart_toStartOf="@+id/right_outer_edge_joystick"
+        app:layout_constraintTop_toTopOf="@+id/right_outer_edge_joystick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

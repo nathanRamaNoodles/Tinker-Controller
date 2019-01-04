@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="profile_width">120dp</dimen>
+    <dimen name="profile_height">120dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="card_width">150dp</dimen>
+    <dimen name="card_height">150dp</dimen>
+</resources>

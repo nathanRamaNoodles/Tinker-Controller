@@ -1,0 +1,3 @@
+rootProject.name = 'TinkerController'
+include ':app'
+include ':libraries:Cyanea'

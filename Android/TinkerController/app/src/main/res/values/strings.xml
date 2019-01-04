@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tinker Controller</string>
+    <string name="action_settings">Settings</string>
+
+    <!--navigation drawer-->
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="github">Example Code</string>
+    <string name="Controller">Controller</string>
+    <string name="Guru_Version">Guru Version</string>
+    <string name="more_info">About</string>
+    <string name="recongizeAuthor">By: Nathan Ramanathan</string>
+    <string name="gamePad">Gamepad</string>
+    <string name="phonePad">Phone</string>
+    <string name="terminal">Terminal</string>
+    <string name="default_ip_address">192.168.4.1</string>
+    <string name="ssidEsp8266">ESPTest</string>
+    <string name="github_link">https://github.com/nathanRamaNoodles/Tinker-Controller</string>
+    <string name="donateLink">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=R6GFJS92FX7J2</string>
+
+    <string name="AboutMessage">
+        \t\tTinker Controller is an open-source Game Controller App that allows you to use an Xbox/Ps4/Joycon or any controller
+        that works with your phone to effortlessly control most micro-controllers such as Arduino/Esp8266/Raspberry Pi over WiFi,
+        bluetooth, or USB.\n\n
+
+        \t\tClick on the Cat, if you want to find latest updates or submit an issue.  If you want to donate then click on the donate button.
+    </string>
+
+
+</resources>
