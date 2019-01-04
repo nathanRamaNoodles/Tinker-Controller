@@ -2,20 +2,20 @@
 # Tinker-Controller
 An open-source Game Controller App that allows you to use an Xbox/Ps4/Joycon or any controller that works with your phone to effortlessly control most micro-controllers such as Arduino/Esp8266/Raspberry Pi over WiFi, bluetooth, or USB.
 
-<p align="center">
-![Alt Text](https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/ic_launcher_round.png?raw=true)
+<p align="center">	
+<img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/ic_launcher_round.png"></img>
 </p>
 <h1 align="center">Tinker Controller</h1>
 
 
 <p align="center">
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R6GFJS92FX7J2)
+	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R6GFJS92FX7J2"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a>
 </p>
 
 
 |Slick and fast UI| Dozens of Themes| Quick Reactions using UDP protocol|
 |:--:|:---:|:------:|
-| <a width="100" href="https://imgflip.com/gif/2qc7es"><img src="https://i.imgflip.com/2qc7es.gif" title="made at imgflip.com"/></a> | <a width="100" href="https://imgflip.com/gif/2qc7jh"> <img src="https://i.imgflip.com/2qc7jh.gif" title="made at imgflip.com"/></a> |  <a width="100" ref="https://imgflip.com/gif/2qc8qy"><img src="https://i.imgflip.com/2qc8qy.gif" title="made at imgflip.com"/></a>|
+| <a width="100" href="https://imgflip.com/gif/2qc7es"><img src="https://i.imgflip.com/2qc7es.gif" title="made at imgflip.com"/></a> | <a width="100" href="https://imgflip.com/gif/2qc7jh"> <img src="https://i.imgflip.com/2qc7jh.gif" title="made at imgflip.com"/></a> |  <a width="100" href="https://imgflip.com/gif/2qcbkg"><img src="https://i.imgflip.com/2qcbkg.gif" title="made at imgflip.com"/></a>|
 
 <h2>Table Of Contents</h2>
 
@@ -44,7 +44,7 @@ An open-source Game Controller App that allows you to use an Xbox/Ps4/Joycon or 
 ## Videos
 This new video below demonstrates and explains how it works:
 <p align="center">
-[![Alt Text](https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/xbox_esp8266_android_photo.jpg?raw=true)](https://www.youtube.com/watch?v=Gns7bLHp2VQ)
+	<a href="https://www.youtube.com/watch?v=Gns7bLHp2VQ"><img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/xbox_esp8266_android_photo.jpg" width="500" height="300"></a>
 </p>
 
 And these are my teaser videos from [Reddit](https://www.reddit.com/r/arduino/comments/aap154/i_connected_my_xbox_controller_to_my_esp8266_with/) and [Youtube](https://www.youtube.com/watch?v=hzFY1dZjo34)
@@ -120,7 +120,7 @@ movement. It can even detect keyboard presses and mouse clicks.
 the network SSID: "ESPTest". The way I programmed the Esp8266 is based on [my MusicWithoutDelay library](https://github.com/nathanRamaNoodles/MusicWithoutDelay-LIbrary).
 This means we will use the Char-by-Char or Streaming method to evaluate each byte in the order it came. For example,
 the phone sends a UDP packet containing two values that I made up.  So, if I press the `A` button on my Xbox controller,
-my phone will send `a1` to the esp8266.  So `a1` means the A button was pressed, and 'a0' vias versa.  I'm pretty sure this
+my phone will send `a1` to the esp8266.  So `a1` means the A button was pressed, and `a0` vias versa.  I'm pretty sure this
 techinque is used a lot in the industries.
 
 **The Esp8266 acts as the server, while my phone is the client.**
