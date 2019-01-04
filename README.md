@@ -12,10 +12,12 @@ An open-source Game Controller App that allows you to use an Xbox/Ps4/Joycon or 
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R6GFJS92FX7J2"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a>
 </p>
 
+<a href="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/demo.apk?raw=true" ><h1 align="center">DOWNLOAD LATEST DEMO</h1></a>
 
 |Slick and fast UI| Dozens of Themes| Quick Reactions using UDP protocol|
 |:--:|:---:|:------:|
 | <a width="100" href="https://imgflip.com/gif/2qc7es"><img src="https://i.imgflip.com/2qc7es.gif" title="made at imgflip.com"/></a> | <a width="100" href="https://imgflip.com/gif/2qc7jh"> <img src="https://i.imgflip.com/2qc7jh.gif" title="made at imgflip.com"/></a> |  <a width="100" href="https://imgflip.com/gif/2qcbkg"><img src="https://i.imgflip.com/2qcbkg.gif" title="made at imgflip.com"/></a>|
+
 
 <h2>Table Of Contents</h2>
 
