@@ -2,8 +2,8 @@
 # Tinker-Controller
 An open-source Game Controller App that allows you to use an Xbox/Ps4/Joycon or any controller that works with your phone to effortlessly control most micro-controllers such as Arduino/Esp8266/Raspberry Pi over WiFi, bluetooth, or USB.
 
-<p align="center">	
-<img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/ic_launcher_round.png"></img>
+<p align="center">
+<img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/Art/ic_launcher_round.png"></img>
 </p>
 <h1 align="center">Tinker Controller</h1>
 
@@ -44,7 +44,7 @@ An open-source Game Controller App that allows you to use an Xbox/Ps4/Joycon or 
 ## Videos
 This new video below demonstrates and explains how it works:
 <p align="center">
-	<a href="https://www.youtube.com/watch?v=Gns7bLHp2VQ"><img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/xbox_esp8266_android_photo.jpg" width="500" height="300"></a>
+	<a href="https://www.youtube.com/watch?v=Gns7bLHp2VQ"><img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/Art/xbox_esp8266_android_photo.jpg" width="500" height="300"></a>
 </p>
 
 And these are my teaser videos from [Reddit](https://www.reddit.com/r/arduino/comments/aap154/i_connected_my_xbox_controller_to_my_esp8266_with/) and [Youtube](https://www.youtube.com/watch?v=hzFY1dZjo34)
@@ -69,11 +69,13 @@ And these are my teaser videos from [Reddit](https://www.reddit.com/r/arduino/co
   10. Have fun, and join me/donate if you want this project to continue :)
 
 ## Thank you
-  + Guys at Espressif for the amazing and fast library and plugin for esp8266
-  + Guys who post good code with examples on stack overflow
-  + [JareDrummler](https://github.com/jaredrummler/Cyanea) for the amazing Theme Engine
-  + [Jake Whorton](https://github.com/JakeWharton/butterknife), for Butterknife library
-  + AndroidX libraries and other libraries cause I don't know where I'd be without you.
++ People who fixed this project's bugs:
+	+ [reddit user u/cointoss3](https://www.reddit.com/r/arduino/comments/acign8/this_is_how_i_connected_my_xbox_controller_to_my/ed96ko2) fixed WDT resets
++ Guys at Espressif for the amazing and fast library and plugin for esp8266
++ Guys who post good code with examples on stack overflow
++ [JareDrummler](https://github.com/jaredrummler/Cyanea) for the amazing Theme Engine
++ [Jake Whorton](https://github.com/JakeWharton/butterknife), for Butterknife library
++ AndroidX libraries and other libraries cause I don't know where I'd be without you.
 
 ## A Letter
 
@@ -125,7 +127,7 @@ techinque is used a lot in the industries.
 
 **The Esp8266 acts as the server, while my phone is the client.**
 Fortunately, you don't have to connect to this server manually. My app immediately starts searching for
-WiFi devices with the name "ESPTest" within your area.  I tried to copy Google Chromecast's method,
+WiFi devices with the name "ESPTest" within your area.  I tried to mimic Google Chromecast's method,
 but its hard to decipher :/
 
    Next, after the phone connects to your esp8266, it will enable streaming mode.  This mode allows you to send UDP
@@ -149,12 +151,10 @@ Submit an [Issue](https://github.com/nathanRamaNoodles/Tinker-Controller/issues)
 ## Agenda
 
 Things I plan to do:
-- [ ] Fix Esp8266 from WDT resets, which is caused by doing an action too fast(such as printing to Serial or analogWrite())
-    + Note: The esp8266 does not crash because of receiving too many packets(It can handle that just fine :D), it crashes because it has a little bit of time to change something.  
-      + This can be solved by processing the input with the esp8266 and then outputting the game-Data to another microcontroller via i2c.
-- [x] Create a Table of Contents :D
+- [x] ~~Fix Esp8266 from WDT resets, which is caused by doing an action too fast(such as printing to Serial or analogWrite())~~
+- [x] ~~Create a Table of Contents~~ :D
 - [ ] Create TinkerController Arduino Library
-- [x] Add WiFi support
+- [x] ~~Add WiFi support~~
 - [ ] Add Bluetooth support(If its fast enough to handle gamecontroller input)
 - [ ] Add USB support
 - [ ] Allow a Keyboard/Mouse to act as a game controller
@@ -163,7 +163,7 @@ Things I plan to do:
     + This will allow us to connect as many WiFi devices to the phone
     + You can add multiple controllers to the Phone thus creating a game server :D
 - [ ] Create a page to access and change Esp8266 password and other stuff
-    + Essentially, I'm trying to mimick Google Chromecast's Setup procedure
+    + Essentially, I'm trying to mimic Google Chromecast's Setup procedure
 - [ ] Make a Terminal for communicating via TCP/UDP.
 - [ ] Make the Phone as a Gamepad, because some people don't have controllers
 - [ ] Conquer my fear: Dagger 2  :'(
@@ -175,9 +175,11 @@ low and behold it did :)
 
 ## Bugs To Fix
 1. Arduino Side:
-   + Esp8266 WDT reset happens when you move the joystick for a long time.
+   + ~~Esp8266 WDT reset happens when you move the joystick for a long time.~~
+	   + Solved by reddit User: [u/cointoss3](https://www.reddit.com/r/arduino/comments/acign8/this_is_how_i_connected_my_xbox_controller_to_my/ed96ko2) who said to use `yield()` when using the controller data.
 2. Android Side:
-   + The WiFi struggles to connect to esp8266 when the Phone's autoconnect is turned on.
+	+ The WiFi struggles to connect to esp8266 when the Phone's autoconnect is turned on.
+	+ Lag develops after exiting gamepad mode
 
 ## License
 
