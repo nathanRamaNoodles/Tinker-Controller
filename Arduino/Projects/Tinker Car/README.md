@@ -7,27 +7,17 @@ A Car I made that can be controlled over WiFi using my Tinker Controller app.  Y
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=R6GFJS92FX7J2"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a>
 </p>
 
-<p align="center">
-<a href="https://imgflip.com/gif/2rgzoe"><img src="https://i.imgflip.com/2rgzoe.gif" title="made at imgflip.com"/></a>
-</p>
+| Slick Controls | Smooth and fast| Quick Reactions using UDP protocol|
+|:----:|:---:|:------:|
+| <a href="https://imgflip.com/gif/2rgzoe"><img src="https://i.imgflip.com/2rgzoe.gif" title="made at imgflip.com"/></a>| <a href="https://imgflip.com/gif/2rh0mf"><img src="https://i.imgflip.com/2rh0mf.gif" title="made at imgflip.com"/></a> |  <img src="https://i.imgflip.com/2qcbkg.gif"/>|
 
-<p align="center">
-<img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/Art/Tinker_Car.jpg"/>
-</p>
-
-<p align="center">
-<img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/Art/Tinker_Car_top.jpg"/>
-</p>
-
-| Smooth and fast Control| Quick Reactions using UDP protocol|
-|:---:|:------:|
-| <a href="https://imgflip.com/gif/2rh0mf"><img src="https://i.imgflip.com/2rh0mf.gif" title="made at imgflip.com"/></a> |  <img src="https://i.imgflip.com/2qcbkg.gif"/>|
 
 <h2>Table Of Contents</h2>
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Tinker-Car](#tinker-car)
 	- [Videos](#videos)
+	- [Pictures](#pictures)
 	- [Getting Started](#getting-started)
 		- [Materials](#materials)
 		- [Procedure](#procedure)
@@ -42,6 +32,20 @@ A Car I made that can be controlled over WiFi using my Tinker Controller app.  Y
 ## Videos
 Video Demonstration:
  [Youtube](https://www.youtube.com/watch?v=CuxZIBogDuw)
+
+## Pictures
+
+<p align="center">
+<img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/Art/Motor_Shield.jpg"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/Art/Tinker_Car_side.jpg"/>
+</p>
+
+<p align="center">
+<img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/Art/Tinker_Car_top.jpg"/>
+</p>
 
 ----------------
 ## Getting Started
