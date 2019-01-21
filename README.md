@@ -1,7 +1,7 @@
 
 # Tinker-Controller
 An open-source Game Controller App that allows you to use an Xbox/Ps4/Joycon or any controller that works with your phone to effortlessly control most micro-controllers such as Arduino/Esp8266/Raspberry Pi over WiFi, bluetooth, or USB.
-
+I have also made a [Car controllered by this app](https://github.com/nathanRamaNoodles/Tinker-Controller/tree/master/Arduino/Projects/Tinker%20Car).
 <p align="center">
 <img src="https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/Art/ic_launcher_round.png"></img>
 </p>
@@ -55,7 +55,8 @@ And these are my teaser videos from [Reddit](https://www.reddit.com/r/arduino/co
 ## Getting Started
   1. Download Android Studio 3.2.0 or higher and then use it to build the project files into an .apk file
      + If you are on your Android phone, then you can [download the demo.apk file here](https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/demo.apk?raw=true)
-  2. Next upload the Tinker_Controller.ino file to the esp8266
+  2. Next upload the [Tinker_Controller_WIFI.ino](https://github.com/nathanRamaNoodles/Tinker-Controller/blob/master/Arduino/Basics/Tinker_Controller_WIFI/Tinker_Controller_WIFI.ino) file to the esp8266
+     + It's located in Arduino/Basics/Tinker_Controller_WiFi folder
   3. Launch app, and click on "Gamepad".  
   4. You should notice the app will automatically connect to the esp8266, but if it doesn't you can tap on the button that has the WiFi symbol
      + If that doesn't work, then go to your WiFi settings, and connect to the "ESPTest" network.
