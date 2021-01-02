@@ -27,7 +27,6 @@ I have also made a [Car controllered by this app](https://github.com/nathanRamaN
 	- [Videos](#videos)
 	- [Getting Started](#getting-started)
 	- [Thank you](#thank-you)
-	- [A Letter](#a-letter)
 - [Questions](#questions)
 	- [Controller Support?](#controller-support)
 	- [Contribute?](#contribute)
@@ -79,23 +78,6 @@ And these are my teaser videos from [Reddit](https://www.reddit.com/r/arduino/co
 + [JareDrummler](https://github.com/jaredrummler/Cyanea) for the amazing Theme Engine
 + [Jake Whorton](https://github.com/JakeWharton/butterknife), for Butterknife library
 + AndroidX libraries and other libraries cause I don't know where I'd be without you.
-
-## A Letter
-
-  Dear Tinkers,
-
-  **Sorry it took a few days to upload all this stuff to github.  Apparently, TCP protocol is pretty bad for streaming, so I decided to use UDP.  
-  I'm just learning this stuff straight out of college so..yeah.** Also, regarding respect to co-workers, I realized using Linus Torvalds as a role model sounds kind of bad. XD
-
-  -Thanks,
-    Nathan Ramanathan
-
-  **P.S.**
-
-  **College DOES NOT TEACH YOU, only StackOverflow, Google, other people's code-on-Github are your teachers**
-
-  ------
-
 
 # Questions
 ------
