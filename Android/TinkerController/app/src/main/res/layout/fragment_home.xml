@@ -37,88 +37,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
-            <LinearLayout
-                android:id="@+id/connection_status"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_margin="@dimen/fab_margin"
-                android:clipToPadding="false"
-                android:padding="4dp"
-                android:visibility="gone">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/gamepad_status"
-                    android:layout_width="@dimen/card_width"
-                    android:layout_height="@dimen/card_height"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginRight="30dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="76dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="@dimen/fab_margin"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_gamepad_clipart"
-                        android:tint="@color/cyanea_accent" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|bottom"
-                        android:layout_margin="@dimen/fab_margin"
-                        android:text="@string/gamePad"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/slave_device_status"
-                    android:layout_width="@dimen/card_width"
-                    android:layout_height="@dimen/card_height"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <ImageView
-                        android:layout_width="120dp"
-                        android:layout_height="96dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="5dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_smartphone_black_24dp"
-                        android:tint="@color/cyanea_accent" />
-
-                    <ImageView
-                        android:layout_width="35dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="30dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_controller"
-                        android:tint="@color/cyanea_accent" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical|bottom"
-                        android:layout_margin="@dimen/fab_margin"
-                        android:text="@string/phonePad"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-                </androidx.cardview.widget.CardView>
-            </LinearLayout>
-
             <LinearLayout
                 android:id="@+id/main_controllers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/connection_status"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/fab_margin"
                 android:clipToPadding="false"
@@ -142,7 +64,7 @@
                         android:layout_marginTop="@dimen/fab_margin"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_gamepad_clipart"
-                        android:tint="@color/cyanea_accent" />
+                        app:tint="@color/cyanea_accent" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -170,7 +92,7 @@
                         android:layout_marginTop="11dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_smartphone_black_24dp"
-                        android:tint="@color/cyanea_accent" />
+                        app:tint="@color/cyanea_accent" />
 
                     <ImageView
                         android:layout_width="35dp"
@@ -179,7 +101,7 @@
                         android:layout_marginTop="38dp"
                         android:scaleType="fitXY"
                         android:src="@drawable/ic_controller"
-                        android:tint="@color/cyanea_accent" />
+                        app:tint="@color/cyanea_accent" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -210,7 +132,7 @@
                     android:layout_marginTop="20dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/ic_code_icon"
-                    android:tint="@color/cyanea_accent" />
+                    app:tint="@color/cyanea_accent" />
 
                 <TextView
                     android:layout_width="wrap_content"

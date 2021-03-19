@@ -332,7 +332,7 @@ public class Gamepad_Joystick_Fragment extends CyaneaFragment implements Gamepad
     public boolean onButton(int buttonPress, boolean isPressed) {
         boolean handled = true;
         switch (buttonPress) {
-            case KeyEvent.KEYCODE_BACK:
+            case KeyEvent.KEYCODE_BUTTON_SELECT:
 //                sayToast("Back Button");
                 changeImageViewColor(mBackButton, isPressed);
                 sendToClient((isPressed) ? "y1" : "y0");

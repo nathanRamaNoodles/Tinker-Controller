@@ -34,16 +34,6 @@ import com.jaredrummler.cyanea.prefs.CyaneaSettingsActivity;
 import com.jaredrummler.cyanea.prefs.CyaneaTheme;
 
 public class MainActivity extends CyaneaAppCompatActivity {
-
-    //butter-knife stuff
-//    @Nullable
-//    @BindView(R.id.toolbar)
-//    Toolbar toolbar;
-//    @Nullable
-//    @BindView(R.id.fab)
-//    FloatingActionButton fab;
-
-
     private Toast mToast;
 
     private NavigationView navigationView;
@@ -68,11 +58,9 @@ public class MainActivity extends CyaneaAppCompatActivity {
 
             switch (id) {
                 case R.id.game_controller:
-                    ToastMaker("Home Fragment");
                     loadFragment(mHomeFragment);
                     break;
                 case R.id.settings:
-                    ToastMaker("Settings");
                     startActivity(new Intent(this, CyaneaSettingsActivity.class));
                     break;
                 case R.id.about:
@@ -82,8 +70,6 @@ public class MainActivity extends CyaneaAppCompatActivity {
                 case R.id.github_cat:
                     Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.github_link)));
                     startActivity(browserIntent);
-//                default:
-//                    ToastMaker(":'(");
             }
             drawer.closeDrawer(GravityCompat.START);
             return true;

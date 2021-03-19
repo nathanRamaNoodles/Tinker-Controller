@@ -17,9 +17,5 @@
             android:id="@+id/about"
             android:icon="@drawable/ic_info_black_24dp"
             android:title="@string/more_info" />
-        <!--<item-->
-            <!--android:id="@+id/pro_version"-->
-            <!--android:icon="@drawable/ic_monetization_on_black_24dp"-->
-            <!--android:title="@string/Guru_Version" />-->
     </group>
 </menu>
